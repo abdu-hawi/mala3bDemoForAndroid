@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="heightRow">40dp</dimen>
+    <dimen name="fontSize">16sp</dimen>
+    <dimen name="termFontSize">13sp</dimen>
+    <dimen name="staduimFontSize">18sp</dimen>
+    <dimen name="staduimHieghtRow">70dp</dimen>
+
+    <!-- staduim_appointment_calendar.xml
+
+
+    <dimen name="textSizeAppointmentCal">18sp</dimen>
+    <dimen name="marginTopAppointmentCalDay">3dp</dimen>
+    <dimen name="marginTopAppointmentCalBTN">1dp</dimen>
+    <dimen name="btnAppointmentCalWandH">40dp</dimen>
+
+    -->
+
+
+</resources>

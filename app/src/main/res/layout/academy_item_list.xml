@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:id="@+id/academyBackgrounList"
+        android:background="@drawable/btn_background_register">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:alpha="0.2"
+                android:background="@drawable/background_item_list"
+                app:layout_constraintBottom_toBottomOf="@+id/txtAcadRegion"
+                app:layout_constraintEnd_toEndOf="@+id/txtAcadRegion"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="@+id/txtAcadRegion"
+                app:layout_constraintTop_toTopOf="@+id/txtAcadRegion" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:layout_marginTop="8dp"
+                android:text="Region/City"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:id="@+id/txtAcadRegion"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/button6"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="8dp"
+                android:alpha="0.2"
+                android:background="@drawable/background_item_list"
+                app:layout_constraintBottom_toBottomOf="@+id/txtAcadListName"
+                app:layout_constraintEnd_toEndOf="@+id/txtAcadListName"
+                app:layout_constraintHorizontal_bias=".5"
+                app:layout_constraintStart_toStartOf="@+id/txtAcadListName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtAcadListName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Al Gawhrah Staduim"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:id="@+id/txtAcadListprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:paddingEnd="7dp"
+                android:paddingStart="7dp"
+                android:text="300 SR"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.506"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/back111"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:alpha="0.1"
+                android:background="@drawable/background_item_list"
+                app:layout_constraintBottom_toBottomOf="@+id/txtAcadListprice"
+                app:layout_constraintEnd_toEndOf="@+id/txtAcadListprice"
+                app:layout_constraintStart_toStartOf="@+id/txtAcadListprice"
+                app:layout_constraintTop_toTopOf="@+id/txtAcadListprice" />
+
+            <RatingBar
+                android:id="@+id/ratingBarAcadList"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:rating="3"
+                android:max="5"
+                android:scaleY=".5"
+                android:scaleX=".5"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="0.2"
+                android:background="@drawable/background_item_list"
+                app:layout_constraintBottom_toBottomOf="@+id/ratingBarAcadList"
+                app:layout_constraintEnd_toEndOf="@+id/ratingBarAcadList"
+                app:layout_constraintStart_toStartOf="@+id/ratingBarAcadList"
+                app:layout_constraintTop_toTopOf="@+id/ratingBarAcadList" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">mal3b</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="add_staduim">Add Staduim</string>
+    <string name="phone_number">Phone No.</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password">Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="login">LOGIN</string>
+    <string name="reset_password">Reset password</string>
+    <string name="register">Register</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="you_have_account">You have account</string>
+    <string name="re_login">Re-login</string>
+    <string name="reservations">Reservations</string>
+    <string name="quick_chating">Quick chatting</string>
+    <string name="view_reservations">View reservations</string>
+    <string name="search_by">Search by |</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="continue1">Continue</string>
+    <string name="location">Location</string>
+    <string name="full_payment">Full Payment</string>
+    <string name="Coupon">Coupon</string>
+    <string name="You_agree_to_the">You agree to the </string>
+    <string name="terms_of_use">terms of use </string>
+    <string name="and">and </string>
+    <string name="confirm">Confirm</string>
+    <string name="search">Search</string>
+    <string name="name">Name: </string>
+    <style name="age">Age: </style>
+    <string name="city">City: </string>
+
+    <string-array name="spinner_time_item">
+        <item>60 min</item>
+        <item>90 min</item>
+        <item>120 min</item>
+    </string-array>
+
+    <string-array name="spinner_region_item">
+        <item>Please Choice Region</item>
+        <item>Makkah</item>
+        <item>Riyadh</item>
+        <item>Eastern Province</item>
+    </string-array>
+
+    <string-array name="spinner_city_item">
+        <item>Please Choice Region First</item>
+    </string-array>
+
+    <string-array name="spinner_makkah_item">
+        <item>Please Choice City</item>
+        <item>Jeddah 1</item>
+        <item>Jeddah 2</item>
+        <item>Jeddah 3</item>
+    </string-array>
+
+    <string-array name="spinner_riyadh_item">
+        <item>Please Choice City</item>
+        <item>Riyadh 1</item>
+        <item>Riyadh 2</item>
+        <item>Riyadh 3</item>
+    </string-array>
+
+    <string-array name="spinner_EasternProvince_item">
+        <item>Please Choice City</item>
+        <item>Dammam 1</item>
+        <item>Dammam 2</item>
+        <item>Dammam 3</item>
+    </string-array>
+
+    <string name="spinner_chois_region_item">Pleas Select Region</string>
+
+    <!-- academy_sub_Activity.xml  -->
+    <string name="booking">BOOKING</string>
+    <string name="academyName">Academy Name: </string>
+    <string name="academyCity">City: </string>
+    <string name="academyDist">District: </string>
+    <string name="academyRate">Rate: </string>
+    <string name="academyPrice">Price: </string>
+    <string name="imgStudioAcadSub">IMAGE STUDIO</string>
+    <string name="academyService">Service: </string>
+    <string name="academyTo">  -  </string>
+    <string name="academyAge">Academy Age: </string>
+
+</resources>

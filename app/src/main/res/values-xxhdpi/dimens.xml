@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="heightRow">40dp</dimen>
+    <dimen name="fontSize">16sp</dimen>
+    <dimen name="termFontSize">14sp</dimen>
+    <dimen name="staduimFontSize">22sp</dimen>
+    <dimen name="staduimHieghtRow">100dp</dimen>
+</resources>

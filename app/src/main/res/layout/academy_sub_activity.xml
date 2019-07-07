@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="81dp"
+    android:background="@color/colorGray1"
+    tools:context="com.example.hawi.mal3b.academy.AcademySubActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/btnAcademySub"
+        android:background="@color/colorGray1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:background="@color/colorGray1">
+
+            <LinearLayout
+                android:id="@+id/headerAcademySub"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/btn_background_register">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:layout_marginEnd="24dp"
+                        android:text="Show More Image"
+                        android:textColor="@color/colorWhite"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="152dp"
+                        android:layout_height="32dp"
+                        android:alpha="0.3"
+                        android:background="@color/green0"
+                        android:textColor="@color/colorWhite"
+                        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                        app:layout_constraintEnd_toEndOf="@+id/textView2"
+                        app:layout_constraintStart_toStartOf="@+id/textView2"
+                        app:layout_constraintTop_toTopOf="@+id/textView2" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHightAcadSub"
+                android:background="@drawable/white_gray_border_top"
+                android:gravity="center"
+                android:paddingStart="5dp">
+                <TextView
+                    android:id="@+id/acaName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/academyName"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/txtAcadNameLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/acaName"
+                    android:layout_centerInParent="true"
+                    android:text=" Mohammad Noor Academy"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHightAcadSub"
+                android:background="@drawable/white_gray_border_top"
+                android:gravity="center"
+                android:paddingStart="5dp">
+                <TextView
+                    android:id="@+id/acaCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/academyCity"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/txtAcadCityLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@id/acaCity"
+                    android:text=" Makkah / Jeddah"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHightAcadSub"
+                android:background="@drawable/white_gray_border_top"
+                android:gravity="center"
+                android:paddingStart="5dp">
+                <TextView
+                    android:id="@+id/acaDist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/academyDist"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/txtAcadDistLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/acaDist"
+                    android:text=" Al Muntazahat"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+
+                <Button
+                    android:id="@+id/btnLocationAcad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="@string/location"
+                    android:onClick="btnLocationAcadEvent"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="5dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHightAcadSub"
+                android:background="@drawable/white_gray_border_top"
+                android:gravity="center"
+                android:paddingStart="5dp">
+                <TextView
+                    android:id="@+id/acaRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/academyRate"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <RatingBar
+                    android:id="@+id/ratingBarAcadSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/acaRate"
+                    android:layout_centerInParent="true"
+                    android:rating="3.5"
+                    android:paddingStart="5dp"
+                    style="@style/Widget.AppCompat.RatingBar.Small"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@+id/ratingBarAcadSub"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHightAcadSub"
+                android:background="@drawable/white_gray_border_top"
+                android:gravity="center"
+                android:paddingStart="5dp">
+                <TextView
+                    android:id="@+id/acaPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/academyPrice"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+
+                <TextView
+                    android:id="@+id/txtAcadPriceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toEndOf="@id/acaPrice"
+                    android:textStyle="bold"
+                    android:text=" 800SR / Year - 100SR / Month"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHightAcadSub"
+                android:background="@drawable/white_gray_border_top"
+                android:gravity="center"
+                android:paddingStart="5dp">
+                <TextView
+                    android:id="@+id/acaService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/academyService"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/txtAcadServiceLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/acaService"
+                    android:layout_centerInParent="true"
+                    android:text=" Transport bus"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/rowHightAcadSub"
+                android:background="@drawable/white_gray_border_top"
+                android:gravity="center"
+                android:paddingStart="5dp">
+                <TextView
+                    android:id="@+id/acadAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:text="@string/academyAge"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/txtAcadAgeFromLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/acadAge"
+                    android:layout_centerInParent="true"
+                    android:text="8"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/AcadAgeTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/txtAcadAgeFromLayout"
+                    android:layout_centerInParent="true"
+                    android:text="@string/academyTo"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/txtAcadAgeToLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/AcadAgeTo"
+                    android:layout_centerInParent="true"
+                    android:text="18"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+                <TextView
+                    android:id="@+id/txtAcadAgeYears"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/txtAcadAgeToLayout"
+                    android:layout_centerInParent="true"
+                    android:text="  Years "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/txtSizeAcadSub"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAcademySub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/btn_background_register"
+        android:text="@string/booking"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        android:onClick="btnAcademyBooking"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

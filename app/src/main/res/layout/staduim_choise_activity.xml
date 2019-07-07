@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green3"
+    tools:context="com.example.hawi.mal3b.staduimChoiseAndConfirmPay.StaduimChoiseActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/btnContinue">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linerBackgroundChoise"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/backgroundHeaderHieght"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/green3"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rigonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_gray_border_top"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/topBottomPaddingCho"
+            android:paddingEnd="@dimen/startEndPaddingCho"
+            android:paddingStart="@dimen/startEndPaddingCho"
+            android:paddingTop="@dimen/topBottomPaddingCho"
+            app:layout_constraintTop_toBottomOf="@+id/linerBackgroundChoise">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_location_on" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/txtCityLayoutChoise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Makkah Regoin / Jeddah City" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/Base.Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/txtSizeChoi"
+                android:onClick="btnLocationChoi"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/location" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/special"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:background="@drawable/white_gray_border_top"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/topBottomPaddingCho"
+            android:paddingLeft="@dimen/startEndPaddingCho"
+            android:paddingRight="@dimen/startEndPaddingCho"
+            android:paddingTop="@dimen/topBottomPaddingCho"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rigonLayout">
+
+            <ImageView
+                android:id="@+id/imgGrassLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pan_tool" />
+
+            <ImageView
+                android:id="@+id/imgBallLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pan_tool" />
+
+            <ImageView
+                android:id="@+id/imgToiletLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_wc"/>
+
+            <ImageView
+                android:id="@+id/imgDressLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pan_tool" />
+
+            <ImageView
+                android:id="@+id/imgShowerLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pan_tool" />
+
+            <ImageView
+                android:id="@+id/imgWaterLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pan_tool" />
+
+            <ImageView
+                android:id="@+id/imgStaduimLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pan_tool" />
+
+            <ImageView
+                android:id="@+id/imgBuffetLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_pan_tool" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/spinnerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/topBottomPaddingCho"
+            android:paddingStart="@dimen/startEndPaddingCho"
+            android:paddingEnd="@dimen/startEndPaddingCho"
+            android:paddingTop="@dimen/topBottomPaddingCho"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/special">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginEnd="@dimen/startEndPaddingCho"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Time: "/>
+
+                <Spinner
+                    android:id="@+id/spinnerTime"
+                    android:textSize="@dimen/txtSizeChoi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/txtTime"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/topBottomPaddingCho"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:text="Size: "/>
+
+                <Spinner
+                    android:id="@+id/spinnerSize"
+                    style="@style/Base.Widget.AppCompat.DropDownItem.Spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/txtSize"
+                    android:textSize="@dimen/txtSizeChoi" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/txtPriceLL"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/rowHieghtCon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spinnerLayout"
+            android:background="@drawable/white_gray_border_top">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txtPriceV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Price: "
+                    android:layout_alignParentStart="true"
+                    android:textStyle="bold"
+                    android:paddingBottom="@dimen/topBottomPaddingCho"
+                    android:paddingTop="@dimen/topBottomPaddingCho" />
+
+                <TextView
+                    android:id="@+id/txtPriceLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/txtPriceV"
+                    android:text="300 $"
+                    android:textStyle="bold"
+                    android:paddingBottom="@dimen/topBottomPaddingCho"
+                    android:paddingTop="@dimen/topBottomPaddingCho" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtSaleLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HOW IT WORKS Promote your Tweets to people who will visit and take actions on your website. Track your results across mobile and web."
+            android:background="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPriceLL"
+            android:paddingRight="@dimen/topBottomPaddingCho"
+            android:paddingLeft="@dimen/topBottomPaddingCho"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/calendarView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightRecycleCal"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/white_gray_border_top"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSaleLayout">
+
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/footballView"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/heightRecycleTime"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/white_gray_border_top"
+            android:paddingTop="@dimen/topBottomPaddingCho"
+            android:paddingBottom="@dimen/topBottomPaddingCho"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/calendarView">
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/btnContinueHeight"
+        android:layout_marginBottom="2dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:onClick="btnCountinueToPayment"
+        android:layout_centerHorizontal="true"
+        android:text="@string/continue1"
+        android:textSize="@dimen/txtSizeChoi"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+
+
+</RelativeLayout>

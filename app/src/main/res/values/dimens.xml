@@ -1,0 +1,67 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="heightRow">40dp</dimen>
+    <dimen name="fontSize">16sp</dimen>
+    <dimen name="termFontSize">13sp</dimen>
+    <dimen name="staduimFontSize">18sp</dimen>
+    <dimen name="staduimHieghtRow">70dp</dimen>
+
+    <!-- staduim_confirm_booking_activity.xml -->
+    <dimen name="dim7dpCon">7dp</dimen>
+    <dimen name="dim90dpCon">90dp</dimen>
+    <dimen name="dim18spCon">18sp</dimen>
+    <dimen name="dim35dpCon">35dp</dimen>
+    <dimen name="dim13spCon">13sp</dimen>
+    <dimen name="dim5dpCon">5dp</dimen>
+    <dimen name="dim55dpCon">55dp</dimen>
+    <dimen name="dim110dpCon">110dp</dimen>
+    <dimen name="dim270dpCon">270dp</dimen>
+    <dimen name="dim11spCon">11sp</dimen>
+
+    <!-- staduim_appointment_calendar.xml-->
+    <dimen name="txtDayMarTop">3dp</dimen>
+    <dimen name="btnDateMarTop">1dp</dimen>
+    <dimen name="btnDateDistance">20dp</dimen>
+    <dimen name="txtCalSize">12sp</dimen>
+
+    <!-- staduim_appointment_time.xml-->
+    <dimen name="ballDistance">30dp</dimen>
+    <dimen name="txtTimeMarTop">3dp</dimen>
+    <dimen name="txtTimeSize">12sp</dimen>
+
+
+    <!-- staduim_choise_activity.xml -->
+    <dimen name="backgroundHeaderHieght">120dp</dimen>
+    <dimen name="topBottomPaddingCho">5dp</dimen>
+    <dimen name="startEndPaddingCho">15dp</dimen>
+    <dimen name="heightRecycleCal">65dp</dimen>
+    <dimen name="heightRecycleTime">55dp</dimen>
+    <dimen name="btnContinueHeight">40dp</dimen>
+    <dimen name="txtSizeChoi">12sp</dimen>
+
+    <!-- staduim_confirm_booking_activity.xml -->
+    <dimen name="paddingScroll">7dp</dimen>
+    <dimen name="txtSizeHeaderCon">18sp</dimen>
+    <dimen name="rowHieghtCon">35dp</dimen>
+    <dimen name="txtSizeCon">13sp</dimen>
+    <dimen name="startEndPaddingCon">5dp</dimen>
+    <dimen name="rowHieghtDeposit">55dp</dimen>
+    <dimen name="widhtSubRelativeCon">200dp</dimen>
+    <dimen name="widhtSubRelativeCon1">270dp</dimen>
+    <dimen name="txtTermCon">11sp</dimen>
+
+    <!-- academy_sub_Activity.xml  -->
+    <dimen name="rowHightAcadSub">35dp</dimen>
+    <dimen name="txtSizeAcadSub">16sp</dimen>
+
+
+    <dimen name="gride_main">100dp</dimen>
+
+</resources>
